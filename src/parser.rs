@@ -1,3 +1,5 @@
+use std::{fs, io};
+use std::path::Path;
 use clap::Parser;
 
 #[derive(Parser)]
@@ -8,8 +10,8 @@ version = "v1.0.0",
 about = "Rust transpiler"
 )]
 pub struct AppArg {
-    #[clap(short, long)]
-    pub lang: Option<String>,
+    // #[clap(short, long)]
+    // pub lang: Option<String>,
 
     pub file_name: String,
 }
